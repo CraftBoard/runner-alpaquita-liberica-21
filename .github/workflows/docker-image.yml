@@ -19,5 +19,5 @@ jobs:
     - name: Build the Docker image
       run: |
         echo '${{ secrets.DOCKERPW }}' | docker login -u "craftboard" --password-stdin
-        docker image build -t craftboard/runner-alpaquita-liberica-17:latest .
-        docker push craftboard/runner-alpaquita-liberica-17:latest
+        docker image build -t craftboard/runner-alpaquita-liberica-21:latest .
+        docker push craftboard/runner-alpaquita-liberica-21:latest
